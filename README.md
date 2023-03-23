@@ -8,4 +8,4 @@ Author: VMOG
 
 - GIT
 - HTML
-- CSS
+- CSS - Responsive
