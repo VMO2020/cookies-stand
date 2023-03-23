@@ -1,8 +1,16 @@
 html {
+	max-width: 1024px;
 	color: black;
 	font-family: 'Poppins', sans-serif;
-	font-size: 1rem;
-	/* 1 rem: 16px */
+	font-size: 1rem; /* 1 rem: 16px */
+	font-weight: 400;
+	line-height: 1.6;
+	letter-spacing: 0.01rem;
+	margin: 0 auto;
+}
+
+.main-container {
+	padding: 1rem 0.5rem;
 }
 
 header {
@@ -10,13 +18,12 @@ header {
 }
 
 .header-container {
-	padding: 1rem 0;
+	margin: 0;
+	padding: 1rem 1.5rem;
 	text-align: center;
-}
-
-.container {
-	width: 90%;
-	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	/* border: 2px solid blue; */
 }
 
 h1 {
@@ -26,8 +33,125 @@ h1 {
 	margin: 0.5rem;
 }
 
+h1 span {
+	color: rgb(239, 238, 238);
+	text-transform: uppercase;
+}
+
 li {
 	display: inline-block;
 	color: white;
 	margin: 0 0.5rem;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+
+li:hover {
+	color: blueviolet;
+}
+
+img {
+	width: 100%;
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.hero-text {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto 2rem auto;
+}
+
+article {
+	margin: 0 0.4rem;
+}
+
+article:hover {
+	scale: 1.05;
+}
+
+#cookie-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.cookie-text {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+#contact {
+	width: 100%;
+	padding: 2rem;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#contact h3 {
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+#gotop {
+	text-align: center;
+	margin: 3rem 0;
+}
+
+#gotop a {
+	font-weight: 700;
+	color: rgb(245, 82, 67);
+	padding: 0.8rem 3rem;
+	border: 2px solid rgb(245, 82, 67);
+	border-radius: 0.8rem;
+}
+
+#gotop a:hover {
+	padding: 0.8rem 4rem;
+}
+
+footer {
+	font-size: 0.7rem;
+	background-color: rgb(245, 82, 67);
+	color: white;
+	text-align: center;
+	line-height: 2rem;
+	height: 2rem;
+	margin-top: 2rem;
+}
+
+@media (min-width: 700px) {
+	.header-container {
+		text-align: left;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.main-container {
+		padding-top: 2rem;
+	}
+
+	h1 {
+		margin: 0 2rem;
+	}
+
+	#cookie-section {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#cookie-section {
+		margin: 2rem;
+	}
+
+	footer {
+		font-size: 1rem;
+		line-height: 3rem;
+		height: 3rem;
+	}
+}
+
+@media (min-width: 900px) {
+	/* code */
 }
