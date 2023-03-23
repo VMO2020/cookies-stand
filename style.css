@@ -1,0 +1,33 @@
+html {
+	color: black;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	/* 1 rem: 16px */
+}
+
+header {
+	background-color: rgb(245, 82, 67);
+}
+
+.header-container {
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: white;
+	margin: 0.5rem;
+}
+
+li {
+	display: inline-block;
+	color: white;
+	margin: 0 0.5rem;
+}
