@@ -1,22 +1,3 @@
-# cookies-stand
-
-## Learning review
-
-Author: VMOG
-
-### Basic GIT, HTML and CSS for Cookie Shop
-
-- GIT
-- HTML
-- CSS - Responsive
-
-### WEB link
-
-Go to the website[ HERE](https://vmo2020.github.io/cookies-stand/)
-
-### Javascript
-
-```js
 //  Declare Variables using camelCase
 let myName = 'Victor Ottati';
 let myAge = 61;
@@ -52,4 +33,3 @@ console.log(heading);
 heading.onclick = () => {
 	alert('Heading clicked...');
 };
-```
