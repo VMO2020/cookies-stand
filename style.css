@@ -50,6 +50,31 @@ li:hover {
 	color: blueviolet;
 }
 
+.hello {
+	display: flex;
+	width: 100%;
+	margin: 1rem 0;
+}
+
+#hello {
+	font-size: 0.8rem;
+	font-style: italic;
+	margin: auto;
+}
+
+.button_container {
+	display: flex;
+	width: 100%;
+	margin: 1rem 0;
+}
+#button_set_color,
+#button_say_hello {
+	margin: auto;
+	padding: 0.3rem 2.5rem;
+	border-radius: 0.5rem;
+	border: 1px solid black;
+}
+
 img {
 	width: 100%;
 	display: block;
@@ -112,7 +137,7 @@ article:hover {
 
 footer {
 	font-size: 0.7rem;
-	background-color: rgb(245, 82, 67);
+	background-color: #f55243;
 	color: white;
 	text-align: center;
 	line-height: 2rem;
