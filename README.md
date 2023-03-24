@@ -12,7 +12,7 @@ Author: VMOG
 
 ### WEB link
 
-Go to the website[ HERE](https://vmo2020.github.io/cookies-stand/)
+Go to the website[HERE](https://vmo2020.github.io/cookies-stand/)
 
 ### Javascript
 
@@ -26,12 +26,12 @@ console.log(`My name is : ${myName} and i have ${myAge} years old`);
 const myActualName = 'Victor';
 const myActualAge = 'secret';
 console.log(
-	'Hello my name is ' +
-		myActualName +
-		' and I am ' +
-		myActualAge +
-		' ' +
-		'years old'
+ 'Hello my name is ' +
+  myActualName +
+  ' and I am ' +
+  myActualAge +
+  ' ' +
+  'years old'
 );
 
 // Arrays
@@ -39,11 +39,7 @@ let colors = ['red', ' green', 'blue'];
 console.log(`RGB colors: ${colors}`);
 
 // Objects
-let user = {
-	name: 'Victor M. Ottati',
-	age: 61,
-	liverpool_fan: true,
-};
+let user = { name: 'Victor M. Ottati', age: 61, liverpool_fan: true };
 console.log(user);
 
 // Operators "+", "-", "*", "/"
@@ -63,15 +59,15 @@ let time = prompt('Hi what time is it (24h)!');
 let message;
 
 if (!userNew) {
-	userNew = '';
+ userNew = '';
 }
 
 if (time < 12) {
-	message = 'Good morning ' + userNew;
+ message = 'Good morning ' + userNew;
 } else if (time > 12 && time < 24) {
-	message = 'Good afternoon ' + userNew;
+ message = 'Good afternoon ' + userNew;
 } else {
-	message = 'That hour does not exist ' + userNew;
+ message = 'That hour does not exist ' + userNew;
 }
 
 const hello = document.getElementById('hello');
@@ -82,22 +78,22 @@ const heading = document.getElementById('title');
 console.log(heading);
 
 heading.onclick = () => {
-	alert('Welcome to my Cookie STAND...');
+ alert('Welcome to my Cookie STAND...');
 };
 
 // Function setColor with the prompt method
 // prompt( "message", defaultValue)
 function setColor() {
-	// console.log('setColor');
-	const setColorButton = document.querySelector('#button_set_color');
-	const header = document.querySelector('header');
-	const footer = document.querySelector('footer');
-	setColorButton.onclick = () => {
-		let color = prompt('Please select your favorite color');
-		setColorButton.style.backgroundColor = color;
-		header.style.backgroundColor = color;
-		footer.style.backgroundColor = color;
-	};
+ // console.log('setColor');
+ const setColorButton = document.querySelector('#button_set_color');
+ const header = document.querySelector('header');
+ const footer = document.querySelector('footer');
+ setColorButton.onclick = () => {
+  let color = prompt('Please select your favorite color');
+  setColorButton.style.backgroundColor = color;
+  header.style.backgroundColor = color;
+  footer.style.backgroundColor = color;
+ };
 }
 
 setColor(); // Call setColor function (run)
@@ -105,18 +101,18 @@ setColor(); // Call setColor function (run)
 // Function sayHello with the confirm method
 // confirm return true or false
 function sayHello() {
-	const setSayButton = document.querySelector('#button_say_hello');
-	setSayButton.onclick = () => {
-		let say = confirm('Hello!!!!!');
-		// console.log(typeof say);
-		if (say == true) {
-			setSayButton.innerHTML = 'Great!';
-			setSayButton.style.color = 'green';
-		} else {
-			setSayButton.innerHTML = 'Sorry!';
-			setSayButton.style.color = 'red';
-		}
-	};
+ const setSayButton = document.querySelector('#button_say_hello');
+ setSayButton.onclick = () => {
+  let say = confirm('Hello!!!!!');
+  // console.log(typeof say);
+  if (say == true) {
+   setSayButton.innerHTML = 'Great!';
+   setSayButton.style.color = 'green';
+  } else {
+   setSayButton.innerHTML = 'Sorry!';
+   setSayButton.style.color = 'red';
+  }
+ };
 }
 
 sayHello(); // Call sayHello function (run)
@@ -130,14 +126,14 @@ let isRed = false;
 contact.addEventListener('click', toggleStyles);
 
 function toggleStyles() {
-	if (isRed) {
-		contact.style.border = '2px solid black';
-		contactH3.style.color = 'black';
-		isRed = false;
-	} else {
-		contact.style.border = '2px solid red';
-		contactH3.style.color = 'red';
-		isRed = true;
-	}
+ if (isRed) {
+  contact.style.border = '2px solid black';
+  contactH3.style.color = 'black';
+  isRed = false;
+ } else {
+  contact.style.border = '2px solid red';
+  contactH3.style.color = 'red';
+  isRed = true;
+ }
 }
 ```
