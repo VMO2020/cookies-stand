@@ -75,7 +75,8 @@ function setColor() {
 	const footer = document.querySelector('footer');
 	setColorButton.onclick = () => {
 		let color = prompt('Please select your favorite color');
-		setColorButton.style.backgroundColor = color;
+		setColorButton.style.color = color;
+		setColorButton.style.border = `2px solid ${color}`;
 		header.style.backgroundColor = color;
 		footer.style.backgroundColor = color;
 	};
