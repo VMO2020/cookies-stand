@@ -102,7 +102,7 @@ function newSum(param1, param2) {
 let resp = newSum(5, 5);
 console.log('newSum = ' + resp);
 
-// Loops
+// LOOPS
 // for(initialization; condition, increment) { run statements }
 
 let myFavPet = ['Cat', 'Dog', 'Goldfish'];
@@ -121,6 +121,23 @@ while (n < 3) {
 	console.log('n: ' + n);
 	console.log('z: ' + z);
 }
+
+// while loop function
+function guessANumber() {
+	let answer;
+
+	while (answer != 7) {
+		answer = prompt('Guess a number between 1 and 10');
+
+		if (answer != 7) {
+			alert('Try Again');
+		} else {
+			alert('Congratulations, you are correct!');
+		}
+	}
+}
+
+// guessANumber();
 
 // Function setColor with the prompt method
 // prompt( "message", defaultValue)

@@ -1,3 +1,7 @@
+// inline scripts - in the top of the HTML, inside <head>
+// Javascript inline scripts Link
+// <script src="top.js"></script>
+
 let userNew2;
 
 function yourName() {
@@ -26,4 +30,16 @@ function timeOfDay() {
 	}
 
 	return message;
+}
+
+// inline function displayRating
+function displayRating() {
+	let output = '';
+
+	let rating = prompt('Scale our cookies on a of 1 to 5, how many stars');
+
+	for (let i = 0; i < rating; i++) {
+		output += "<img class='star' src='images/star.svg' alt= 'rating star' >";
+	}
+	return document.write(output);
 }
