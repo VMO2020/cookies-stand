@@ -1,6 +1,13 @@
 // inline scripts - in the top of the HTML, inside <head>
+
+// USE:
 // Javascript inline scripts Link
 // <script src="top.js"></script>
+// ....
+// <p class="center star-container">
+// 	<script>displayRating();</script>
+// 	Thanks for rating:&nbsp;
+// </p>;
 
 let userNew2;
 
