@@ -2,16 +2,18 @@ let userNew2;
 
 function yourName() {
 	userNew2 = prompt('What is your name');
+
+	// Check prompt input and set default user
+	if (!userNew2) {
+		userNew2 = 'user';
+	}
+
 	return document.write(userNew2);
 }
 
 function timeOfDay() {
 	let time = prompt('Hi ' + userNew2 + ', what hour is it? (0 - 23)');
 	let message;
-
-	if (!userNew2) {
-		userNew2 = '';
-	}
 
 	if (time < 12) {
 		message = 'Good morning ' + userNew2;

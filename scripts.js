@@ -19,7 +19,7 @@ console.log(
 let colors = ['red', ' green', 'blue'];
 console.log(`RGB colors: ${colors}`);
 
-// Objects
+// Objects {property: "value"}
 let user = {
 	name: 'Victor M. Ottati',
 	age: 61,
@@ -43,14 +43,17 @@ let userNew = prompt('Hello my name is Victor, what is your name?');
 let time = prompt('Hi what time is it (24h)!');
 let message;
 
+// Check prompt input and set default user
 if (!userNew) {
-	userNew = '';
+	userNew = 'user';
 }
 
 if (time < 12) {
 	message = 'Good morning ' + userNew;
-} else if (time > 12 && time < 24) {
+} else if (time <= 18) {
 	message = 'Good afternoon ' + userNew;
+} else if (time < 24) {
+	message = 'Good night ' + userNew;
 } else {
 	message = 'That hour does not exist ' + userNew;
 }
@@ -74,7 +77,7 @@ function sum() {
 
 sum();
 
-// Function 2
+// Function with name
 const anotherSum = function () {
 	let x = 3 + 3;
 	console.log('AnotherSum = ' + x);
@@ -98,6 +101,26 @@ function newSum(param1, param2) {
 
 let resp = newSum(5, 5);
 console.log('newSum = ' + resp);
+
+// Loops
+// for(initialization; condition, increment) { run statements }
+
+let myFavPet = ['Cat', 'Dog', 'Goldfish'];
+
+for (let i = 0; i < myFavPet.length; i++) {
+	console.log('I love my pet ' + myFavPet[i]);
+}
+
+// while(condition) { run statements}
+let n = 0;
+let z = 0;
+
+while (n < 3) {
+	n++;
+	z += n; // z = x + n
+	console.log('n: ' + n);
+	console.log('z: ' + z);
+}
 
 // Function setColor with the prompt method
 // prompt( "message", defaultValue)
