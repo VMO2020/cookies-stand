@@ -27,6 +27,11 @@ header {
 	/* border: 2px solid blue; */
 }
 
+.center {
+	text-align: center;
+	margin: 1rem auto;
+}
+
 h1 {
 	font-size: 1.5rem;
 	font-weight: 700;

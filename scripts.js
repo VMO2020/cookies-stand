@@ -66,6 +66,39 @@ heading.onclick = () => {
 	alert('Welcome to my Cookie STAND...');
 };
 
+// Functions
+function sum() {
+	let x = 2 + 2;
+	console.log('Sum = ' + x);
+}
+
+sum();
+
+// Function 2
+const anotherSum = function () {
+	let x = 3 + 3;
+	console.log('AnotherSum = ' + x);
+};
+
+anotherSum();
+
+// Function with params NaN = Not a Number
+function bestSum(param1, param2) {
+	let x = param1 + param2;
+	console.log('bestSum = ' + x);
+}
+
+bestSum(5, 5);
+
+// Function with params and return
+function newSum(param1, param2) {
+	let x = param1 + param2;
+	return x;
+}
+
+let resp = newSum(5, 5);
+console.log('newSum = ' + resp);
+
 // Function setColor with the prompt method
 // prompt( "message", defaultValue)
 function setColor() {
